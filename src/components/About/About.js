@@ -1,9 +1,11 @@
 //src/components/About/About.js
 import React from "react";
+import Navbar from "../Navbar";
 
 function About() {
   return (
     <>
+      <Navbar />
       <div className="about">
         <h2>Lite Mer Om Mig</h2>
         <p>
