@@ -1,13 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
-import "./App.css";
+import About from "./components/About/About"; // Antag att du har en About-komponent
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      {/* Andra komponenter kommer här */}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
 }
 
